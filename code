@@ -1,0 +1,17 @@
+
+def bubble_sort(list):
+    for i in range(length):
+            for j in range(length-i-1):
+                   if list[j] > list[j+1]:
+                         list[j],list[j+1]=list[j+1],list[j]
+    return list
+
+length=int(input("Enter the length of list:"))
+list=[]
+for k in range(length):
+      num=int(input("Enter a number:"))
+      list.append(num)
+print("Given list:",list)
+sorted_list=bubble_sort(list)
+print ("The sorted list :",sorted_list)
+
